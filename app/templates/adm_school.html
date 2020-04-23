@@ -1,0 +1,107 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+<header>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <a href="" class="logo">Панель супер АДМИНА</a>
+    <nav>
+        <ul class="topmenu">
+          <li><a href="" class="submenu-link">Ученики</a>
+            <ul class="submenu">
+              <li><a href="add_student">Добавить</a></li>
+              <!--<li><a href="admin/delete_school">Удалить</a>
+              <li><a href="admin/schools_list">Список</a></li>
+                <a href="admin/delete_admin">Удалить Админа</a></li>-->
+            </ul>
+          </li>
+          <li><a href="" class="submenu-link">Учителя</a>
+            <ul class="submenu">
+                <!--<li><a href="admin/update_teacher">Обновить</a></li>
+                <li><a href="admin/delete_teacher">Удалить</a></li>
+                <li><a href="admin/teachers_list">Список</a></li>
+                <li><a href="admin/add_teacher_xls">Добавить через xls</a></li>-->
+                <li><a href="add_teacher">Добавить</a></li>
+
+            </ul>
+          </li>
+          <li><a href="" class="submenu-link">Классы</a>
+            <ul class="submenu">
+                <li><a href="add_class">Добавить</a></li>
+                <!--
+                <li><a href="admin/add_class_xls">Добавить через xls</a></li>
+                <li><a href="admin/delete_class">Удалить</a></li>
+                <li><a href="admin/class_list">Список</a></li>-->
+            </ul>
+          </li>
+            <li><a href="" class="submenu-link">Группы</a>
+            <ul class="submenu">
+                <li><a href="add_group">Добавить</a></li>
+              <!--<li><a href="admin/add_group_xls">Добавить через xls</a></li>
+              <li><a href="admin/delete_group">Удалить</a></li>
+              <li><a href="admin/group_list">Список</a></li>-->
+              <li><a href="add_teachergroup">Добавить учителя к группе</a></li>
+              <li><a href="add_studentgroup">Добавить ученика к группе</a></li>
+              <!--<li><a href="admin/delete_studentgroup">Удалить ученика из группы</a></li>
+              <li><a href="admin/delete_teachergroup">Удалить учителя из группы</a></li>
+              <li><a href="admin/add_teachergroup_xls">Добавить уичтеля к группе через xls</a></li>-->
+            </ul>
+          </li>
+          </ul>
+      </nav>
+    <nav>
+        <ul class="topmenu">
+    </nav>
+      <nav>
+        <ul class="topmenu">
+          <li><a href="" class="submenu-link">Расписание</a>
+            <ul class="submenu">
+              <li><a href="admin/add_schedule_class">Добавить расписание</a></li>
+              <li><a href="admin/del_schedule">Удалить</a></li>
+            </ul>
+          </li>
+      </nav>
+  </header>
+<script>document.getElementById("gl").classList.add('active');</script>
+{% endblock %}
+<body>
+</body>
+{% block footer %}
+<p>
+&#8291;</p><p>
+&#8291;</p><p>
+&#8291;</p><p>
+&#8291;</p><p>
+&#8291;</p><p>
+&#8291;</p><p>
+&#8291;</p><p>
+&#8291;</p><p>
+&#8291;</p><p>
+&#8291;</p><p>
+&#8291;</p><p>
+&#8291;</p><p>
+&#8291;</p><p>
+&#8291;</p><p>
+&#8291;</p><p>
+&#8291;</p><p>
+&#8291;</p><p>
+&#8291;</p><p>
+&#8291;</p><p>
+&#8291;</p><p>
+&#8291;</p><p>
+&#8291;</p><p>
+&#8291;</p><p>
+&#8291;</p><p>
+&#8291;</p><p>
+&#8291;</p><p>
+&#8291;</p><p>
+&#8291;</p><p>
+&#8291;</p><p>
+&#8291;</p><p>
+&#8291;</p><p>
+&#8291;</p><p>
+&#8291;</p><p>
+&#8291;</p><p>
+&#8291;</p><p>
+&#8291;</p>{%endblock%}
+

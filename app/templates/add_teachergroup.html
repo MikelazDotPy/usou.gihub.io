@@ -1,0 +1,30 @@
+<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Title</title>
+</head>
+<body>
+    <input type = "text" class = "id_school" placeholder = "id учителя"> <input type = "text" class = "name" placeholder = "название группы">
+    <button class="atuin-btn">Push me</button>
+    <script>
+        let id_school = document.querySelector(".id_school");
+        let name = document.querySelector(".name");
+        let buton = document.querySelector('button');
+
+
+        buton.onclick = function(){
+            let xhr = new XMLHttpRequest();
+            xhr.open('POST', 'http://127.0.0.1:5000/admin/add_teachergroup', true);
+            var a = {
+                "id_teacher":id_school.value,
+                "name_group":name.value
+            }
+            xhr.send(JSON.stringify(a))
+}
+
+    </script>
+</body>
+</html>

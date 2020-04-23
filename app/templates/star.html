@@ -1,0 +1,103 @@
+<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+<head>
+
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='star.css') }}">
+    <title>Title</title>
+</head>
+<body>
+	<form name="myform" action="myformhandler.cgi" method="POST">
+	<div class="rating_block" id = "one">
+		<input name="rating" value="5" id="rating_5" type="radio" />
+		<label for="rating_5" class="label_rating"></label>
+	   
+		<input name="rating" value="4" id="rating_4" type="radio" />
+		<label for="rating_4" class="label_rating"></label>
+	   
+		<input name="rating" value="3" id="rating_3" type="radio" />
+		<label for="rating_3" class="label_rating"></label>
+	   
+		<input name="rating" value="2" id="rating_2" type="radio" />
+		<label for="rating_2" class="label_rating"></label>
+	   
+		<input name="rating" value="1" id="rating_1" type="radio" />
+		<label for="rating_1" class="label_rating"></label>
+	</div>
+	<div class="rating_block" id = "two">
+		<input name="rating2" value="5" id="rating_55" type="radio" />
+		<label for="rating_55" class="label_rating"></label>
+	   
+		<input name="rating2" value="4" id="rating_44" type="radio" />
+		<label for="rating_44" class="label_rating"></label>
+	   
+		<input name="rating2" value="3" id="rating_33" type="radio" />
+		<label for="rating_33" class="label_rating"></label>
+	   
+		<input name="rating2" value="2" id="rating_22" type="radio" />
+		<label for="rating_22" class="label_rating"></label>
+	   
+		<input name="rating2" value="1" id="rating_11" type="radio" />
+		<label for="rating_11" class="label_rating"></label>
+	</div>
+	<div class="rating_block" id = "thre">
+		<input name="rating3" value="5" id="rating_555" type="radio" />
+		<label for="rating_555" class="label_rating"></label>
+	   
+		<input name="rating3" value="4" id="rating_444" type="radio" />
+		<label for="rating_444" class="label_rating"></label>
+	   
+		<input name="rating3" value="3" id="rating_333" type="radio" />
+		<label for="rating_333" class="label_rating"></label>
+	   
+		<input name="rating3" value="2" id="rating_222" type="radio" />
+		<label for="rating_222" class="label_rating"></label>
+	   
+		<input name="rating3" value="1" id="rating_111" type="radio" />
+		<label for="rating_111" class="label_rating"></label>
+	</div>
+</form>
+	<button class = "atuin-btn" id = "but">ОТПРАВИТЬ ОТЗЫВ</button>
+	<br/>
+	<script>
+		let button = document.querySelector('button');
+		let leson1;
+		let leson2;
+		let leson3;
+		function check()
+{
+    var inp = document.getElementsByName('rating2');
+    for (var i = 0; i < inp.length; i++) {
+        if (inp[i].type == "radio" && inp[i].checked) {
+			leson2= inp[i].value;
+        }
+    }
+}
+function check2()
+{
+    var inp = document.getElementsByName('rating3');
+    for (var i = 0; i < inp.length; i++) {
+        if (inp[i].type == "radio" && inp[i].checked) {
+            leson3= inp[i].value;
+        }
+    }
+}
+function check3()
+{
+    var inp = document.getElementsByName('rating');
+    for (var i = 0; i < inp.length; i++) {
+        if (inp[i].type == "radio" && inp[i].checked) {
+			leson1= inp[i].value;
+        }
+    }
+}
+button.onclick = function(){
+	check();
+	check2();
+	check3();
+	alert(leson1)
+	alert(leson2)
+	alert(leson3)
+}
+
+	</script>
+

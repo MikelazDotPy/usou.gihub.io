@@ -1,0 +1,8 @@
+<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+{% block content %}
+    <h1></h1>
+    <form action="" method="post" novalidate>
+        {{ form.hidden_tag() }}
+        <p>Ученик {{form.student_list}} Класс {{form.class_list}} {{form.name(size=16, placeholder="Имя")}} {{form.surname(size=16, placeholder="Фамилия")}} {{form.patronymic(size=16, placeholder="Отчество")}} Пол {{form.sex}} {{form.password(size=16, placeholder="Пароль")}} {{ form.submit2(value="Изменить") }}</p>
+    </form>
+{% endblock %}

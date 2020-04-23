@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% block content %}
+<link rel="stylesheet" href="{{ url_for('static', filename='student.css') }}">
+    <h1></h1>
+<div class="school">
+    <form action="" method="post" novalidate>
+        {{ form.hidden_tag() }}
+        <p class="stl">ID,  Школа, Класс, Группа, Имя, Фамилия, Отчетво, Пол</p>
+    {%for row in rows%}
+        <p class="stl">{{row}}</p>
+    {%endfor%}
+        <p>{{form.school_list(class="selecttt")}} {{form.class_list(class="selecttt")}} {{form.name(size=16, placeholder="Имя")}} {{form.surname(size=16, placeholder="Фамилия")}} {{form.patronymic(size=16, placeholder="Отчество")}} {{form.sex(class="selecttt sex")}} {{form.password(size=16, placeholder="Пароль")}} {{ form.submit(value="Добавить") }}</p>
+        <p> {{form.student_list2(class="selecttt")}} {{form.class_list2(class="selecttt")}} {{form.name2(size=16, placeholder="Имя")}} {{form.surname2(size=16, placeholder="Фамилия")}} {{form.patronymic2(size=16, placeholder="Отчество")}} {{form.sex2(class="selecttt sex")}} {{form.password2(size=16, placeholder="Пароль")}} {{ form.submit3(value="Изменить") }}</p>
+        <p>{{form.student_list(class="selecttt")}} {{ form.submit2(value="Удалить") }}</p>
+    </form>
+</div>
+{% endblock %}
+{% block footer %}<p>
+&#8291;</p><p>
+&#8291;</p><p>
+&#8291;</p><p>
+&#8291;</p><p>
+&#8291;</p><p>
+&#8291;</p><p>
+&#8291;</p><p>
+&#8291;</p><p>
+&#8291;</p><p>
+&#8291;</p><p>
+&#8291;</p><p>
+&#8291;</p><p>
+&#8291;</p><p>
+&#8291;</p><p>
+&#8291;</p><p>
+&#8291;</p><p>
+&#8291;</p><p>
+&#8291;</p><p>
+&#8291;</p><p>
+&#8291;</p><p>
+&#8291;</p><p>
+&#8291;</p><p>
+&#8291;</p><p>
+&#8291;</p><p>
+&#8291;</p><p>
+&#8291;</p><p>
+&#8291;</p><p>
+&#8291;</p><p>
+&#8291;</p><p>
+&#8291;</p><p>
+&#8291;</p><p>
+&#8291;</p><p>
+&#8291;</p><p>
+&#8291;</p><p>
+&#8291;</p><p>
+&#8291;</p>{%endblock%}

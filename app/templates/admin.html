@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+{% block content %}
+<body>
+<div class="school">
+        <h1></h1>
+    <p class="stl">ID,  Школа</p>
+    {%for row in rows%}
+        <p class="stl">{{row}}</p>
+    {%endfor%}
+
+    <form action="" method="post" novalidate>
+
+        <p>{{form.school_list(class="selecttt")}} {{form.name(placeholder="Пароль")}} {{ form.submit() }}</p>
+        <p></p>
+        <p>{{form.student_list(class="selecttt")}} {{ form.submit2(value="Удалить") }}</p>
+    </form>
+
+</div>
+</body>
+{% endblock %}
+{% block footer %}<p>
+&#8291;</p><p>
+&#8291;</p><p>
+&#8291;</p><p>
+&#8291;</p><p>
+&#8291;</p><p>
+&#8291;</p><p>
+&#8291;</p><p>
+&#8291;</p><p>
+&#8291;</p><p>
+&#8291;</p><p>
+&#8291;</p><p>
+&#8291;</p><p>
+&#8291;</p><p>
+&#8291;</p><p>
+&#8291;</p><p>
+&#8291;</p><p>
+&#8291;</p><p>
+&#8291;</p><p>
+&#8291;</p><p>
+&#8291;</p><p>
+&#8291;</p><p>
+&#8291;</p><p>
+&#8291;</p><p>
+&#8291;</p><p>
+&#8291;</p><p>
+&#8291;</p><p>
+&#8291;</p><p>
+&#8291;</p><p>
+&#8291;</p><p>
+&#8291;</p><p>
+&#8291;</p><p>
+&#8291;</p><p>
+&#8291;</p><p>
+&#8291;</p><p>
+&#8291;</p><p>
+&#8291;</p>{%endblock%}
+</html>

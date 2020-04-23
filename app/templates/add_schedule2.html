@@ -1,0 +1,15 @@
+<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+{% block content %}
+    <h1></h1>
+    <form action="" method="post" novalidate>
+        {{ form.hidden_tag() }}
+        <p>Пн 1 урок {{form.monday1}} Вт 1 урок {{form.tuesday1}} Ср 1 урок {{form.wednesday1}} Чт 1 урок {{form.thursday1}} Пт 1 урок {{form.friday1}} Сб 1 урок {{form.saturday1}}</p>
+        <p>Пн 2 урок {{form.monday2}} Вт 2 урок {{form.tuesday2}} Ср 2 урок {{form.wednesday2}} Чт 2 урок {{form.thursday2}} Пт 2 урок {{form.friday2}} Сб 1 урок {{form.saturday2}}</p>
+        <p>Пн 3 урок {{form.monday3}} Вт 3 урок {{form.tuesday3}} Ср 3 урок {{form.wednesday3}} Чт 3 урок {{form.thursday3}} Пт 3 урок {{form.friday3}} Сб 1 урок {{form.saturday3}}</p>
+        <p>Пн 4 урок {{form.monday4}} Вт 4 урок {{form.tuesday4}} Ср 4 урок {{form.wednesday4}} Чт 4 урок {{form.thursday4}} Пт 4 урок {{form.friday4}} Сб 1 урок {{form.saturday4}}</p>
+        <p>Пн 5 урок {{form.monday5}} Вт 5 урок {{form.tuesday5}} Ср 5 урок {{form.wednesday5}} Чт 5 урок {{form.thursday5}} Пт 5 урок {{form.friday5}} Сб 1 урок {{form.saturday5}}</p>
+        <p>Пн 6 урок {{form.monday6}} Вт 6 урок {{form.tuesday6}} Ср 6 урок {{form.wednesday6}} Чт 6 урок {{form.thursday6}} Пт 6 урок {{form.friday6}} Сб 1 урок {{form.saturday6}}</p>
+        <p>{{form.submit}}<p>
+    </form>
+{% endblock %}

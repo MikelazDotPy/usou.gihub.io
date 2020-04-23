@@ -1,0 +1,59 @@
+<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+<header>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <a href="" class="logo">Админ панель</a>
+    <nav>
+        <ul class="topmenu">
+          <li><a href="" class="submenu-link">Школы</a>
+            <ul class="submenu">
+              <li><a href="admin/add_school">Добавить</a></li>
+              <li><a href="admin/delete_school">Удалить</a></li>
+              <li><a href="admin/schools_list">Список</a></li>
+            </ul>
+          </li>
+          <li><a href="" class="submenu-link">Ученики</a>
+            <ul class="submenu">
+              <li><a href="admin/update_student">Обновить</a></li>
+              <li><a href="admin/delete_student">Удалить</a></li>
+              <li><a href="admin/students_list">Список</a></li>
+              <li><a href="admin/add_student">Добавить</a></li>
+              <li><a href="admin/add_student_xls">Добавить через xls</a></li>
+            </ul>
+          </li>
+          <li><a href="" class="submenu-link">Учителя</a>
+            <ul class="submenu">
+                <li><a href="admin/update_teacher">Обновить</a></li>
+                <li><a href="admin/delete_teacher">Удалить</a></li>
+                <li><a href="admin/teachers_list">Список</a></li>
+                <li><a href="admin/add_teacher">Добавить</a></li>
+                <li><a href="admin/add_teacher_xls">Добавить через xls</a></li>
+            </ul>
+          </li>
+          <li><a href="" class="submenu-link">Классы</a>
+            <ul class="submenu">
+                <li><a href="admin/add_class">Добавить</a></li>
+                <li><a href="admin/add_class_xls">Добавить через xls</a></li>
+                <li><a href="admin/delete_class">Удалить</a></li>
+                <li><a href="admin/class_list">Список</a></li>
+            </ul>
+          </li>
+          </ul>
+      </nav>
+  </header>
+  <header>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+    <nav>
+        <ul class="topmenu">
+          <li><a href="" class="submenu-link">Группы</a>
+            <ul class="submenu">
+              <li><a href="admin/add_group">Добавить</a></li>
+              <li><a href="admin/add_group_xls">Добавить через xls</a></li>
+              <li><a href="admin/delete_group">Удалить</a></li>
+              <li><a href="admin/group_list">Список</a></li>
+              <li><a href="admin/add_teachergroup_xls">Добавить уичтеля к группе через xls</a></li>
+              <li><a href="admin/add_teachergroup">Добавить уичтеля к группе</a></li>
+            </ul>
+          </li>
+      </nav>
+  </header>

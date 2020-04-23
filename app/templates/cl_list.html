@@ -1,0 +1,15 @@
+<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Title</title>
+</head>
+<body>
+        <p class="stl">ID, Школа, Класс<p>
+    {%for row in rows%}
+        <p class="stl">{{row}}</p>
+    {%endfor%}
+</body>
+</html>
